@@ -10,8 +10,6 @@
     },
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -19,7 +17,7 @@
     "Docker": {
       "commandName": "Docker",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "https://+:8443;http://+:8080"
+        "ASPNETCORE_URLS": "https://+:443;http://+:80"
       },
       "publishAllPorts": true,
       "useSSL": true

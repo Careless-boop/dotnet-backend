@@ -4,7 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <ActiveDebugProfile>Products</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\Properties\PublishProfiles\FolderProfile2.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

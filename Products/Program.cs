@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the
 
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -22,6 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 app.UseHttpsRedirection();
 app.UseCors(opt => opt
     .AllowAnyOrigin()
@@ -33,4 +33,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+// Explicitly set the URL to listen on port 8080
+app.Run("http://0.0.0.0:8080");

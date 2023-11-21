@@ -587,3 +587,4 @@ C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\obj\Debu
 C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\obj\Debug\net6.0\Products.genruntimeconfig.cache
 C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\obj\Debug\net6.0\ref\Products.dll
 C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\bin\Debug\net6.0\Products.db
+C:\Users\vitya\Documents\Курс\Homework8\src\dofd-05-dotnet\Products\bin\Debug\net6.0\Properties\launchSettings.json

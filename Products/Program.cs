@@ -3,10 +3,8 @@ using Products.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the
-
+// Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProductsContext>(
@@ -23,15 +21,20 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors(opt => opt
-    .AllowAnyOrigin()
-    .AllowAnyHeader()
-    .AllowAnyMethod()
-    .SetIsOriginAllowed(origin => true));
+
+// Enable CORS with a named policy.
+app.UseCors("AllowAnyPolicy");
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Set up CORS policy
+app.UseCors(builder => builder
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .SetIsOriginAllowed(origin => true));
 
 // Explicitly set the URL to listen on port 8080
 app.Run("http://0.0.0.0:8080");
